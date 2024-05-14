@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <style>
+      #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #header > * {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .rectangulo {
+        width: 150px;
+        height: 100px;
+        background-color: #f5acb4;
+        text-align: center;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        box-shadow:0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        padding: 3px;
+      }
+      
+    .contenedor-rectangulos {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px; 
+    }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <a
+          style="
+            text-decoration: none;
+            color: rgb(90, 85, 78);
+            padding: 8px 16px 8px 16px;
+            font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+          "
+          href="/"
+        >
+          Dashboard
+        </a>
+        <a
+          style="
+            text-decoration: none;
+            color: rgb(90, 85, 78);
+            padding: 8px 16px 8px 16px;
+            font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+          "
+          href="/courses"
+        >
+          Courses
+        </a>
+        <a
+          style="
+            text-decoration: none;
+            color: rgb(90, 85, 78);
+            padding: 8px 16px 8px 16px;
+            font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+          "
+          href="/users"
+        >
+          Users
+        </a>
+      </div>
+
+      <div style="display: flex; justify-content: center">
+        <a
+          style="
+            text-decoration: none;
+            color: rgb(90, 85, 78);
+            font-size: 50px;
+            font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+          "
+          href="/"
+        >
+          📗
+        </a>
+      </div>
+
+      <div style="display: flex; justify-content: end">
+        <a
+          style="
+            text-decoration: none;
+            color: rgb(90, 85, 78);
+            padding: 8px 16px 8px 16px;
+            font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+          "
+          href="/"
+        >
+          Sign out
+        </a>
+      </div>
+    </header>
+    <h1>Admin Dashboard</h1>
+      <div class="contenedor-rectangulos">
+        <div class="rectangulo">Sign ups</div>
+        <div class="rectangulo">Sales</div>
+        <div class="rectangulo">Lesson done</div>
+        <div class="rectangulo">Total sign ups</div>
+      </div>
+  </body>
+</html>
